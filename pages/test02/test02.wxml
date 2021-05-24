@@ -1,0 +1,14 @@
+<!--pages/test02/test02.wxml-->
+<view class="container">
+<view style="background-color:#e2e2e2" class="item">项目1</view>
+<view style="background-color:#e2e2e2" class="item">项目2</view>
+<view style="background-color:#e2e2e2" class="item">项目3</view>
+<view style="background-color:#e2e2e2" class="item">项目4</view>
+<view style="background-color:#e2e2e2" class="item">项目5</view>
+<view style="background-color:#e2e2e2" class="item">项目6</view>
+<view style="background-color:#e2e2e2" class="item">项目7</view>
+<view style="background-color:#e2e2e2" class="item">项目8</view>
+<view style="background-color:#e2e2e2" class="item">项目9</view>
+
+</view>
+

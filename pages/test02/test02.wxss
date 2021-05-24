@@ -1,0 +1,11 @@
+/* pages/test02/test02.wxss */
+.container{
+  /* width: 300px; */
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+}

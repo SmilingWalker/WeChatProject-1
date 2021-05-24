@@ -4,12 +4,29 @@ const app = getApp()
 
 Page({
   data: {
+    userInfoflag:true,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     canIUseGetUserProfile: false,
+    array: [{
+      message: 'foo',
+    }, {
+      message: 'bar'
+    }],
+    time:(new Date()).toString(),
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+  },
+  onReachBottom(){
+    console.log("reach bottom")
+  },
+  onPullDownRefresh(){
+    wx.stopPullDownRefresh({
+      success: (res) => {
+        console.log("aaa")
+      },
+    })
   },
   // 事件处理函数
   bindViewTap() {

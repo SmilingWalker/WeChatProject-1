@@ -1,0 +1,31 @@
+<!--pages/test01/test01.wxml-->
+<text>pages/test01/test01.wxml</text>
+<text>Hello world</text>
+<switch wx:for="{{array}}" wx:key="message">
+  {{item.message}}
+  </switch>
+  <button bindtap="switch"> Switch </button>
+  <button bindtap="ToNextPage"> ToNextPage </button>  
+  <button bindtap="logEvent"> Log Event </button>  
+  <view
+  id="outer"
+  bind:touchstart="handleTap1"
+  capture-bind:touchstart="handleTap2"
+>
+  outer view
+  <view
+    id="inner"
+    bind:touchstart="handleTap3"
+    capture-bind:touchstart="handleTap4"
+    hover-class="hover"
+  >
+    inner view
+  </view>
+</view>
+
+<view hover-class="hover">
+this is text
+</view>
+<button loading="{{loading}}" bindtap="loadClick">
+加载图片
+</button>
